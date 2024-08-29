@@ -28,7 +28,7 @@ sudo apt-get install gcc python3-dev
 sudo pip3 install psutil
 ```
 
-### Usage
+## Usage
 Run the script to display battery details:
 
 ```bash
@@ -36,7 +36,7 @@ python battery_percentage.py
 
 ```
 
-### Output Example
+## Output Example
 When you run the script, you might see output similar to the following:
 
 ```bash
