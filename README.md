@@ -68,3 +68,12 @@ print("Power plugged in: ", battery.power_plugged)
 print("Battery left: ", convertTime(battery.secsleft))
 
 ``` 
+
+## Explanation
+
+The `psutil` library is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, networks, sensors) in Python. This script uses `psutil.sensors_battery()` to get battery details:
+
+- **percent**: Power left in percentage.
+- **secsleft**: Approximate seconds left before the power runs out. It is set to `psutil.POWER_TIME_UNLIMITED` if it is on charging. If this value can’t be determined, it is set to `psutil.POWER_TIME_UNKNOWN`.
+- **power_plugged**: `True` if power is plugged in, `False` if it isn’t charging, or `None` if it can’t be determined.
+
