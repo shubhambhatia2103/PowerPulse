@@ -18,3 +18,11 @@ Install the `psutil` library using `pip`:
 
 ```bash
 pip install psutil
+
+### Linux
+Install psutil with the following commands:
+
+```bash
+sudo apt-get install gcc python3-dev
+sudo pip3 install psutil
+
